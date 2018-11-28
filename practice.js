@@ -14,7 +14,7 @@ function greeting(name) {
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-newGreeting = function(name) {
+const newGreeting = function(name) {
   return "Hello, " + name;
 };
 
@@ -89,11 +89,8 @@ let ruff = dog.bark();
 function looper(arr) {
   let mySum = 0;
   for (let i in arr) {
-    if (arr[i] % 2 === 1) {
+    if (arr[i] % 2 === 1 || arr[i] >= 100) {
       mySum += arr[i];
-    } else if (arr[i] >= 100) {
-      mySum += arr[i];
-    }
   }
   return mySum;
 }
